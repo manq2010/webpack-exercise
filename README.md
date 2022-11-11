@@ -38,9 +38,33 @@ git clone git@github.com:<username>/<repo>.git
 ### Install
 
 ### Usage
+
 * open the index.html file in the browser
 
 ### Run tests
+
+For tracking linter errors locally you need to follow these steps:
+
+After cloning the project you need to run this command (`This command will download all the dependencies of the project`)
+
+```
+npm install
+```
+
+For tracking the linter errors in HTML file run:
+
+```
+npx hint .
+```
+For tracking the linter errors in CSS file run:
+```
+npx stylelint "**/*.{css,scss}"
+```
+
+And For tracking the linter errors in JavaScript file run:
+```
+npx eslint .
+```
 
 ### Deployment
 * This project is deployed with Github pages.
